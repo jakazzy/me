@@ -1,0 +1,32 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Human_nist"
+theme= "mainroad"
+paginate="10"
+
+[Author] # Used in authorbox
+  name = "Human_nist"
+  bio = "Software Developer. I love rap (esp by NF), classical music, etc, a stroll"
+  avatar = "img/avatar.png"
+
+[Params.logo]
+  image = "img/placeholder.png" # Logo image. Path relative to "static"
+  title = "Mainroad" # Logo title, otherwise will use site title
+  subtitle = "Just another site" # Logo subtitle
+
+[Params.sidebar]
+  home = "right" # Configure layout for home page
+  list = "right"  # Configure layout for list pages
+  single = false # Configure layout for single pages
+  # Enable widgets in given order
+  widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
+  
+[Params.widgets]
+  recent_num = 5 # Set the number of articles in the "Recent articles" widget
+  tags_counter = true # Enable counter for each tag in "Tags" widget
+
+[Params.widgets.social]
+  # Enable parts of social widget
+  twitter = "human_nist"
+  github = "jakazzy"
+  email = "jakazzy@gmail.com"
