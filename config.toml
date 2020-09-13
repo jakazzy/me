@@ -7,13 +7,13 @@ disqusShortname = "human_nist" # Enable Disqus comments by entering your Disqus 
 
 [Author] # Used in authorbox
   name = "Human_nist"
-  bio = "Software Developer. I love rap (esp by NF), classical music, etc, a stroll"
+  bio = "Software Developer. I love rap (fav. is NF), classical music, etc, a stroll"
   avatar = "img/avatar.png"
 
 [Params.logo]
   image = "img/placeholder.png" # Logo image. Path relative to "static"
-  title = "Mainroad" # Logo title, otherwise will use site title
-  subtitle = "Just another site" # Logo subtitle
+  title = "Human_nist" # Logo title, otherwise will use site title
+  subtitle = "A blog for technical writing and sharing experiences" # Logo subtitle
 
 [Params.sidebar]
   home = "right" # Configure layout for home page
@@ -33,8 +33,8 @@ disqusShortname = "human_nist" # Enable Disqus comments by entering your Disqus 
   email = "jakazzy@gmail.com"
 
 [Params]
-  description = "JHuman_nist blog for technical writing" # Site description. Used in meta description
-  #copyright = "John Doe" # Footer copyright holder, otherwise will use site title
+  description = "Human_nist blog for technical writing" # Site description. Used in meta description
+  #copyright = "Human_nist" # Footer copyright holder, otherwise will use site title
   opengraph = true # Enable OpenGraph if true
   #schema = true # Enable Schema
   #twitter_cards = true # Enable Twitter Cards if true
