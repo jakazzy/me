@@ -2,11 +2,6 @@
 title: "Migrate From Jekyll"
 date: 2020-08-31T06:15:14Z
 draft: false
----
-
----
-title: Migrate to Hugo from Jekyll
-date: 2014-03-10
 linktitle: Migrating from Jekyll
 menu:
   main:
