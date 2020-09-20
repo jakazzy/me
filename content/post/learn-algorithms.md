@@ -8,7 +8,8 @@ lead: "Notes from Grokking Algorithm as part of Learning in Public" # Lead text
 categories:
   - "Algorithm and Datastructures"
 tags:
-  - "Algorithm"
+  - "Binary Search"
+  - "Big O Notation"
 ---
 
 Algorithms refer to series of steps/instructions for achieving a task.
@@ -63,4 +64,4 @@ The Common Big O Notation Runtimes include:
       4. O(n2) //n squared
       5. O(n!) // n factorial
 
-Big O Notation is most focused on the worst case scenario
+Big O Notation is most focused on the worst case scenario. Algorithm is therefore measured in growth.
