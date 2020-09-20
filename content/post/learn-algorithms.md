@@ -6,7 +6,7 @@ description: "Notes from Grokking Algorithm as part of Learning in Public"
 linktitle: Notes from Grokking Algorithm
 lead: "Notes from Grokking Algorithm as part of Learning in Public" # Lead text
 categories:
-  - "Algorithm and Datastuctures"
+  - "Algorithm and Datastructures"
 tags:
   - "Algorithm"
 ---
@@ -14,18 +14,20 @@ tags:
 Algorithms refer to series of steps/instructions for achieving a task.
 
 ## Binary Search Algorithm:
-This algorithm works when the input data or list is sorted inorder. It cuts down the nimner of steps to search for an element in a list. Imagine you are searching for a name, Adwoa in a phone book. The names of the contacts are sorted in alphabetical order
+This algorithm works when the input data or list is sorted inorder. It reduces the number of steps to search for an element in a list. Imagine you are searching for a name, Grena in a phone book. The names of the contacts in the phone book are sorted in alphabetical order.
 
-Searching for the names by flipping a page at a time for a phone book of 1000 pages means, it may take maximum 1000steps to find Grena.
+Searching for a name by flipping a page at a time for a phone book of 1000 pages means, it may take maximum 1000steps to find Grena.
 
-Which is quite a lot. Binary search Algorithm on the other hand reduces the number of steps(operations) inorder to find the name Grena.
+Which is quite a lot steps(operations). Binary search Algorithm, on the other hand reduces the number of operations to be performed inorder to find the name Grena.
 
-To use a Binary Search Algorithm, first you flip to the middle of the contact book, check the initial letter of the name in the middle and ask if the letter before or after the letter "G".
-If the letter is  before G, taking the name as the lower half, divide the contact book into two again. Compare the initial letter of the middle name with the letter "G" of Grena. If the letter is  is after "G", now move the upper half to this middle letter and repeat the process.
-When Grena is found, the algorithm returns the position of Grena in the contact book. If Grena cannot be found in the book, the algorithm returns  null.
+To use a Binary Search Algorithm, first you identify the middle of the contact book and flip to that position in the contact book. You identlify the name in that position(middle). Subsequently, you compare the name to the search name, Gren. Then you ask, does Gren come before or after this current middle name? If Gren comes before this current middle name,  mark this position as the highest point. Determine another middle position from the initial page of the book the current highest position(previous middle page). Determine a middle page between the two, compare with Gren, based on  the result shift either the lowest pointer or the highest pointer till Gren is identified. 
+This algorithm will be explained in code below(in JavaScript following same proceedure as in the book Grokking algorithm)
+
+If after the process Grena is found, the algorithm returns the position of Grena in the contact book. If Grena cannot be found in the book, the algorithm returns  null.
 
 Demonstrated in code (JavaScript)
       // Binary search as understood from the Grokking Algorithm
+
       const binarySearch = (arr, item) => {
         let low = 0;
         let high = arr.length - 1;
@@ -51,7 +53,7 @@ Demonstrated in code (JavaScript)
       console.log(binarySearch(myList, 3)); 
 
 ## BIG O NOTATION
-Big O Notaion provides insight on the maximum number of operations an algorithm perform to run. The focus is on run time of an algorithm. This is not necessaril how fast an algorithm will run but rather how an increase in the size of input will increase an algorithm's run time.
+Big O Notaion provides insight on the maximum number of operations an algorithm can perform. The focus is on run time of an algorithm. This is not necessarily how fast an algorithm will run but rather how an increase in the size of input will increase an algorithm's run time.
 
 The Common Big O Notation Runtimes include:
 
